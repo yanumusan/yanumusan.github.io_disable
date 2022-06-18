@@ -1,0 +1,672 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #ffffff;
+}
+
+
+/* HEADER */
+header {
+  min-height: 4.5em;
+  background-color: #2155cd;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+header .logo {
+  flex-basis: 25%;
+  padding: 0 7em;
+}
+
+header .logo img {
+  display: block;
+  width: 6em;
+}
+
+header nav {
+  flex-basis: 75%;
+  padding: 0 7em;
+}
+
+header nav ul li {
+  display: inline;
+  padding: 0 1em;
+  list-style-type: none;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 0.875em;
+}
+
+header nav ul li a:hover {
+  color: #ffe300;
+}
+
+header .nav-toggle {
+  display: none;
+}
+
+/* MAIN */
+main {
+  background-color: white;
+}
+
+main .jumbotron {
+  padding: 1.75em;
+  background-color: #2155cd;
+}
+
+main .jumbotron figure {
+  flex-basis: 40%;
+}
+
+main .jumbotron figure img {
+  width: 23.75em;
+}
+
+main .jumbotron section {
+  flex-basis: 60%;
+  padding: 3em .375em;
+}
+
+main .jumbotron section h1 {
+  font-size: 2.25em;
+  color: #ffffff;
+}
+
+main .jumbotron section p {
+  padding-top: .375em;
+  font-size: 1.125em;
+  color: #ffffff;
+}
+
+main .jumbotron section a.btn {
+  margin-top: 3em;
+}
+
+main .products-benefit {
+  padding: 1em;
+  background-color: #E8F9FD;
+}
+
+main .products-benefit .benefit-item {
+  padding: 1em;
+  text-align: center;
+  color: #2155cd;
+}
+
+main .products-benefit .benefit-item img {
+  width: 4em;
+}
+
+main .products-benefit .benefit-item h2 {
+  font-size: 1.5em;
+}
+
+main .products-benefit .benefit-item p {
+  margin-top: .75em;
+  font-size: 1em;
+  font-weight: 300;
+}
+
+main #products {
+  padding: 4em;
+}
+
+main #products .product-detail {
+  padding: 1em 0;
+}
+
+main #products .product-detail img {
+  flex-basis: 35%;
+  width: 22.5em;
+  transition: transform .35s ease-in;
+}
+
+main #products .product-detail img:hover {
+  transform: scale(1.1);
+}
+
+main #products .product-detail .product-description {
+  flex-basis: 65%;
+  padding: 2em 1em;
+}
+
+main #products .product-detail .product-description h2 {
+  font-size: 1.5em;
+  color: #2155cd;
+}
+
+main #products .product-detail .product-description p {
+  margin-top: 1em;
+  font-size: .875em;
+  font-weight: 300;
+  line-height: 1.75em;
+  color: #333333;
+}
+
+main #order-products {
+  padding: 4em;
+  background-color: #2155cd;
+}
+
+main #order-products h1 {
+  margin-top: 2em;
+  font-size: 1.75em;
+  text-align: center;
+  color: #ffffff;
+}
+
+main #order-products .product-slider {
+  margin-top: 2.5em;
+  max-width: 48em;
+  overflow-x: hidden;
+}
+
+main #order-products .product-slider .product-slider-item {
+  min-width: 15em;
+  border-top: .5em solid #FCD900;
+  border-bottom: .5em solid #FCD900;
+  border-radius: .375em;
+  margin: 0 .5em;
+  padding: .5em;
+  color: #333333;
+  background-color: #ffffff;
+  transition: all 1s ease-in-out;
+}
+
+main #order-products .product-slider .product-slider-item img {
+  width: 10.5em;
+}
+
+main #order-products .product-slider .product-slider-item h2 {
+  margin-top: .5em;
+  font-size: 1.125em;
+  font-weight: 500;
+  text-align: center;
+}
+
+main #order-products .product-slider .product-slider-item .product-variant {
+  font-size: 0.875em;
+  font-weight: 300;
+  text-align: center;
+}
+
+main #order-products .product-slider .product-slider-item .product-price {
+  margin-top: .25em;
+  font-size: 1.5em;
+  font-weight: 700;
+  color: #FCD900;
+}
+
+main #order-products .products-slider-control {
+  display: flex;
+  align-items: center;
+  margin-top: 5em;
+}
+
+main #order-products .products-slider-control .btn {
+  margin: 0 2.5em;
+}
+
+main .testimonials {
+  padding: 4em 0;
+}
+
+main .testimonials h1 {
+  font-size: 1.5em;
+  text-align: center;
+  color: #2155cd;
+}
+
+main .testimonials .testimonials-slider {
+  margin-top: 1.5em;
+  max-width: 100%;
+}
+
+main .testimonials .testimonials-slider .btn-icon {
+  padding: 1.5em;
+  margin: 0 2em;
+}
+
+main .testimonials .testimonials-slider .testimonials-slider-item-wrapper {
+  max-width: 52.5em;
+  overflow-x: hidden;
+}
+
+main .testimonials .testimonials-slider .testimonials-slider-item-wrapper .testimonials-slider-item {
+  padding: 1em;
+  min-width: 52.5em;
+  text-align: center;
+  transition: all 1s ease-in-out;
+}
+
+main .testimonials .testimonials-slider .testimonials-slider-item-wrapper .testimonials-slider-item .testimonials-img {
+  width: 8em;
+  height: 8em;
+  background-color: #E8F9FD;
+  border-radius: 50%;
+  overflow: hidden;
+  border: .25em solid #FCD900;
+}
+
+main .testimonials .testimonials-slider .testimonials-slider-item-wrapper .testimonials-slider-item img {
+  width: 100%;
+  margin: auto;
+  background-size: cover;
+}
+
+main .testimonials .testimonials-slider .testimonials-slider-item-wrapper .testimonials-slider-item span {
+  padding: .875em 0;
+  font-size: 1.125em;
+  font-weight: 700;
+  color: #FCD900;
+}
+
+main .testimonials .testimonials-slider .testimonials-slider-item-wrapper .testimonials-slider-item blockquote {
+  font-size: .875em;
+  font-weight: 300;
+  font-style: italic;
+  color: #666666;
+}
+
+main #faq {
+  padding: 4em;
+  background-color: #2155cd;
+}
+
+main #faq h1 {
+  margin-top: 2em;
+  font-size: 1.5em;
+  color: #ffffff;
+}
+
+main #faq>h2 {
+  margin-bottom: 1em;
+  font-size: 1.125em;
+  text-align: center;
+  color: #ffe300;
+}
+
+main #faq section {
+  width: 52.5em;
+  margin-top: 1em;
+}
+
+main #faq section .faq-question {
+  padding: 1em;
+  border-radius: .5em;
+  background-color: #1d4bb7;
+}
+
+main #faq section .faq-question h2 {
+  font-size: .875em;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+main #faq section .faq-question .more {
+  padding: .5em;
+}
+
+main #faq section .faq-question.show-answer {
+  border-bottom: .25em solid #FCD900;
+  border-radius: .5em .5em 0 0;
+}
+
+main #faq section .faq-answer {
+  display: none;
+  padding: 1em 2em;
+  border-radius: 0 0 .5em .5em;
+  font-size: .875em;
+  font-weight: 300;
+  background-color: #ffffff;
+  color: #333333;
+}
+
+main #faq section .faq-answer.show-answer {
+  display: block;
+}
+
+main #contact {
+  background-color: #ffffff;
+}
+
+main #contact .contact-wrapper {
+  flex-basis: 60%;
+  padding: 4em;
+}
+
+main #contact .contact-wrapper h1 {
+  font-size: 1.5em;
+  text-align: center;
+  color: #2155cd;
+}
+
+main #contact .contact-wrapper p {
+  margin-top: 2em;
+  margin-bottom: 1em;
+  font-size: .875em;
+  font-weight: 300;
+  color: #333333;
+}
+
+main #contact .contact-wrapper .contact-item {
+  padding: .15em 0;
+}
+
+main #contact .contact-wrapper .contact-item span {
+  padding: 0 .5em;
+  font-size: .875em;
+  font-weight: 300;
+  color: #333333;
+}
+
+main #contact .contact-wrapper .contact-item img {
+  width: 1.5em;
+}
+
+main #contact .biodata {
+  flex-basis: 40%;
+  padding: 4em;
+}
+
+main #contact .biodata figure {
+  width: 10.93em;
+  height: 10.93em;
+  overflow: hidden;
+  border-radius: 50%;
+  border: .25em solid #2155cd;
+}
+
+main #contact .biodata figure img {
+  width: 100%;
+  margin: auto;
+  background-size: cover;
+}
+
+main #contact .biodata .biodata-name {
+  padding-top: 1em;
+  font-size: 1em;
+  font-weight: 700;
+  text-align: center;
+  color: #2155cd;
+}
+
+main #contact .biodata .biodata-desc {
+  font-size: .875;
+  font-weight: 700;
+  text-align: center;
+  color: #FCD900;
+}
+
+/* FOOTER */
+footer {
+  height: 4em;
+  font-size: 14px;
+  font-weight: 300;
+  text-align: center;
+  background-color: #2155cd;
+  color: #ffffff;
+}
+
+
+.active {
+  font-weight: bold;
+  color: #ffe300;
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 0.375em;
+  padding: 0.625em;
+  cursor: pointer;
+  text-align: center;
+}
+
+.btn-medium {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.btn-font-gray {
+  color: #333333;
+}
+
+.btn-bg-yellow {
+  background-color: #FCD900;
+}
+
+.btn-bg-yellow:hover {
+  background-color: rgba(254, 254, 15, 1);
+}
+
+.btn-icon {
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn-icon:hover {
+  opacity: .7;
+}
+
+.flex-container-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-container-row {
+  display: flex;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.justify-content-start {
+  justify-content: flex-start;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.justify-content-end {
+  justify-content: flex-end;
+}
+
+.flex-direction-row-reverse {
+  flex-direction: row-reverse;
+}
+
+.flex-direction-column-reverse {
+  flex-direction: column-reverse;
+}
+
+.icon-stackbar {
+  display: block;
+  width: 2em;
+  height: 2em;
+  background-image: url("../../assets/img/icons/stack-bar.png");
+  background-size: cover;
+}
+
+.icon-crossbar {
+  display: block;
+  width: 2em;
+  height: 2em;
+  background-image: url("../../assets/img/icons/cross-bar.png");
+  background-size: cover;
+}
+
+.icon-left-arrow-rounded {
+  display: block;
+  width: 2em;
+  height: 2em;
+  background-image: url("../../assets/img/icons/left-arrow-rounded.png");
+  background-size: cover;
+}
+
+.icon-right-arrow-rounded {
+  display: block;
+  width: 2em;
+  height: 2em;
+  background-image: url("../../assets/img/icons/right-arrow-rounded.png");
+  background-size: cover;
+}
+
+.icon-left-arrow {
+  display: block;
+  width: 2em;
+  height: 2em;
+  background-image: url("../../assets/img/icons/left-arrow.png");
+  background-size: cover;
+}
+
+.icon-right-arrow {
+  display: block;
+  width: 2em;
+  height: 2em;
+  background-image: url("../../assets/img/icons/right-arrow.png");
+  background-size: cover;
+}
+
+.icon-down-arrow {
+  display: block;
+  width: 1em;
+  height: 1em;
+  background-image: url("../../assets/img/icons/down-arrow.png");
+  background-size: cover;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 768px) {
+
+  header {
+    flex-wrap: wrap;
+  }
+
+  header .logo {
+    flex-basis: 50%;
+    padding: 0 2em;
+  }
+
+  header .logo.show-nav-mobile {
+    padding: 0.375em 2em 0;
+  }
+
+  header nav.flex-container-row {
+    display: none;
+  }
+
+  header nav.show-nav-mobile {
+    display: flex;
+    order: 3;
+    flex-basis: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 1em;
+    padding: 0 2em;
+    background-color: #1d4bb7;
+  }
+
+  header nav.show-nav-mobile ul li {
+    display: block;
+    padding: 0.375em 0;
+  }
+
+  header .nav-toggle {
+    display: flex;
+    order: 2;
+    flex-basis: 50%;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 2em;
+  }
+
+  main .jumbotron {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  main .jumbotron figure img {
+    width: 100%;
+  }
+
+  main .products-benefit {
+    flex-direction: column;
+  }
+
+  main #products .product-detail {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  main #products .product-detail img {
+    width: 100%;
+  }
+
+  main #order-products .product-slider {
+    max-width: 100%;
+  }
+
+  main #order-products .product-slider .product-slider-item {
+    min-width: 100%;
+    margin: 0;
+  }
+
+  main #order-products .products-slider-control .btn {
+    margin: 0 2.5vw;
+  }
+
+  main .testimonials .testimonials-slider {
+    max-width: 100%;
+  }
+
+  main .testimonials .testimonials-slider .btn-icon {
+    padding: 1em;
+    margin: 0 2vw;
+  }
+
+  main .testimonials .testimonials-slider .testimonials-slider-item-wrapper {
+    max-width: 100%;
+  }
+
+  main .testimonials .testimonials-slider .testimonials-slider-item-wrapper .testimonials-slider-item {
+    min-width: 100%;
+  }
+
+  main #faq section {
+    width: 100%;
+  }
+
+  main #contact {
+    flex-direction: column;
+  }
+
+
+}
